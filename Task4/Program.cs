@@ -8,7 +8,7 @@ int Zapros(string message) {
 }
 
 
-int[,] GetDoubleMassFromDiagonal(int rows, int columns) {
+int[,] GetDoubleMassFromDiagonal(int rows, int columns) { // метод заполнения массива по диагонали
     int[,] arr = new int[rows, columns];
     int temp = 1;
         for (int i = 1 - rows; i <= rows - 1; i++)
@@ -24,7 +24,7 @@ int[,] GetDoubleMassFromDiagonal(int rows, int columns) {
     return arr;
 }
 
-void PrintArr(int[,] arr) {
+void PrintArr(int[,] arr) { // метод печати массива
     for (int i = 0; i < arr.GetLength(0); i++)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
